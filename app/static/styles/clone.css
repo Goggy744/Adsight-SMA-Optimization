@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+html{
+  scroll-snap-type: y mandatory;
+}
+body{
+  background-color: lightgray;
+}
+.counter{
+  color:white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
+.insta-clone{
+  width: 630px;
+  margin: auto;
+  height: 100%;
+  background-color: white;
+}
+.quit-btn-wrapper{
+  position: sticky;
+  top: 0;
+  .quit-btn{
+    position: absolute;
+    right: 0;
+    transform: translateX(200%);
+    border: none;
+    border-radius: .5rem;
+    padding: .8rem;
+    background-color: white;
+    font-weight:bold ;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  .quit-btn:hover{
+    background-color: black;
+    color: white;
+  }
+}
+.feed{
+  background-color: white;
+  margin: auto;
+  width: 470px;
+}
+article{
+  margin-top:1rem;
+  width: 470px;
+  height: 798px;
+  border-top: solid lightgray 1px;
+  scroll-snap-align: start;
+}
+.post-header{
+  height:48px;
+  display: flex;
+  align-items: center;
+  .profil-pic{
+    border-radius: 50%;
+    background-color: lightgrey;
+    width: 35px;
+    height:35px;
+  }
+  .profil-name{
+    .username{
+      font-size: .9rem;
+      padding-left: 0.3rem;
+      font-weight: bold;
+    }
+    .ad-label{
+      color: grey;
+      font-style:italic;
+      font-weight: bold;
+    }
+    .location{
+      font-size: .8rem;
+      padding-left: .3rem;
+      font-weight: normal;
+    }
+  }
+}
+.post-content{
+  height:587px;
+  .post-image{
+    border-radius: .2rem;
+    border: solid lightgray 1px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.post-footer{
+  height: 126px;
+ .buttons-menu{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: .5rem;
+    .callToAction{
+      padding: .4rem;
+      background-color: lightgrey;
+      color: black;
+      font-size: .9rem;
+      font-weight: bold;
+      border: none;
+      border-radius: .5rem;
+      cursor: pointer;
+    }
+  }
+}
+.post-footer .amountOfLike{
+  height: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+.buttons-menu .likeBtn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.hide{
+  display: none;
+}

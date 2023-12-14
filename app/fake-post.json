@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "type": "post",
+      "username": "Traveler_Jane",
+      "caption": "Wanderlust vibes in the air! ✈️ Exploring new horizons and making memories. #TravelDreams",
+      "likes": 6766,
+      "linkToImage": "/static/post-images/post2.png",
+      "location": "Santorini, Greece"
+    },
+    {
+      "type": "post",
+      "username": "SunnyBeachLover",
+      "caption": "Sun, sea, and sand - the perfect recipe for a blissful vacation! 🌞🌊 #BeachEscape",
+      "likes": 99779,
+      "linkToImage": "/static/post-images/post3.png",
+      "location": "Maui, Hawaii"
+    },
+    {
+      "type": "post",
+      "username": "CafeExplorer_Alice",
+      "caption": "Lost in the beauty of historic streets and charming cafes. ☕️🏰 #CulturalJourney",
+      "likes": 2301,
+      "linkToImage": "/static/post-images/post4.png",
+      "location": "Paris, France"
+    },
+    {
+      "type": "post",
+      "username": "MountainEscape_Tom",
+      "caption": "A mountain retreat - where the air is crisp, and the views are breathtaking! ⛰️🏞️ #MountainEscape",
+      "likes": 489,
+      "linkToImage": "/static/post-images/post5.png",
+      "location": "Banff, Canada"
+    },
+    {
+      "type": "post",
+      "username": "SeaSunset_Adventurer",
+      "caption": "Cruising through crystal-clear waters - where every sunset is a masterpiece! 🚢🌅 #CruiseLife",
+      "likes": 876,
+      "linkToImage": "/static/post-images/post6.png",
+      "location": "Caribbean Sea"
+    }
+  ]
+}

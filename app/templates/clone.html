@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adsight</title> 
+  <link rel="stylesheet" type="text/css" href="../static/styles/clone.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <section class="timer" id="timer-section">
+    <div class="counter" id="counter-id">10</div>
+  </section>
+  <section class="insta-clone hide" id="insta-clone-id">
+    <form method='post' class="quit-btn-wrapper">
+      <button class="quit-btn" type="submit"">Finish</button>
+    </form>
+    <main class="feed">
+      {% for article in fake_articles %}
+        {% if article.type == 'post' %}
+          <article class="post">
+            <div class="post-header">
+              <div>
+                <div class="profil-pic"></div>
+              </div>
+              <div class="profil-name">
+                <h3 class="username">{{article.username}}</h3>
+                <h4 class="location">{{article.location}}</h4>
+              </div>
+            </div>
+            <div class="post-content">
+              <img src="{{article.linkToImage}}" class="post-image">
+            </div>
+            <div class="post-footer">
+              <div class="buttons-menu">
+                <button class="likeBtn" onclick="like(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+                  <svg class="hide" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="amountOfLike">{{article.likes}} likes</div>
+              <div class="caption">
+                <span style="font-weight: bold;">{{article.username}}</span> {{article.caption}}
+              </div>
+            </div>
+          </article>
+        {% else %}
+          <article class="post ad">
+            <div class="post-header">
+              <div>
+                <div class="profil-pic"></div>
+              </div>
+              <div class="profil-name">
+                <h3 class="username">{{article.agency}}  <span class="ad-label"> Advertisement</span></h3>
+                <h4 class="location">{{article.destination}}</h4>
+              </div>
+            </div>
+            <div class="post-content">
+              <img src="{{article.imageLink}}" class="post-image">
+            </div>
+            <div class="post-footer">
+              <div class="buttons-menu">
+                <button class="likeBtn" onclick="like(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+                  <svg class="hide" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                </button>
+                <button class="callToAction" onclick="callToAction(this)">Book Your Flight</button>
+              </div>
+              <div class="amountOfLike">{{article.likes}} likes</div>
+              <div class="caption">
+                <span style="font-weight: bold;">{{article.agency}}</span> {{article.caption}} <br>{{article.hashtag}}
+              </div>
+            </div>
+          </article>
+        {% endif %}
+        
+      {% endfor %}
+    </main>
+  </section>
+  <script src="../static/js/clone.js"></script>
+</body>
+</html>
+

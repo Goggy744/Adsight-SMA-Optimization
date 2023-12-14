@@ -1,0 +1,31 @@
+{
+  "advertisements": [
+    {
+      "type": "ad",
+      "agency": "EternalEscapes",
+      "caption": "Discover the enchanting streets and iconic art of Paris with our Cultural City Break package. 🥐🗼",
+      "hashtag": "#ParisianAdventure #CulturalCityBreak",
+      "destination": "Paris, France",
+      "likes": 5235,
+      "imageLink": "/static/ad-images/paris_city_break.jpeg"
+    },
+    {
+      "type": "ad",
+      "agency": "SummitSeekers",
+      "caption": "Embark on an epic trekking adventure in the majestic Himalayan Mountains. Book your Himalayan escape now and conquer new heights! ⛰️🥾",
+      "hashtag": "#HimalayanTrek #EpicAdventure",
+      "destination": "Himalayan Mountains",
+      "likes": 32132,
+      "imageLink": "/static/ad-images/himalayan_trek.jpeg"
+    },
+    {
+      "type": "ad",
+      "agency": "OceanLuxuryTravel",
+      "caption": "Indulge in luxury on a cruise through the crystal-clear waters of the Caribbean. Book your luxury cruise experience now! 🚢🌴",
+      "hashtag": "#LuxuryCruise #CaribbeanGetaway",
+      "destination": "Caribbean",
+      "likes": 321,
+      "imageLink": "/static/ad-images/caribbean_cruise.jpeg"
+    }
+  ]
+}

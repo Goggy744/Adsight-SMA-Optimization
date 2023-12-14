@@ -1,0 +1,84 @@
+:root{
+  --primary-color: #201B1F;
+  --secondary-color: #CCCCCC;
+  --accent-color:#9593D9; 
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+body{
+  background-color: var(--secondary-color);
+}
+.welcome{
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.language-btn{
+  position: absolute;
+  top: 3vh;
+  right: 3vw;
+  border-radius: 1rem;
+  border:none;
+  padding-inline: .5rem;
+  padding-top: .3rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.language-btn:hover{
+  background-color: var(--accent-color);
+}
+.description-item{
+  margin-right: 15rem;
+  padding: 1rem;
+  .item-title{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+  }
+  .item-text{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    color: var(--primary-color);
+  }
+}
+.tyMessage{
+  margin-top: 3rem;
+  padding-inline: 20rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+.start-btn-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-btn{
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border:none;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  padding-block: .5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin:3rem 0 3rem 0 ;
+}
+.start-btn:hover{
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: solid var(--accent-color) 1px;
+}
+
+a{
+  text-decoration: none; 
+  color: inherit;
+ }
+.hide{
+  display: none;
+}
