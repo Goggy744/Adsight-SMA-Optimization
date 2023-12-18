@@ -1,0 +1,5 @@
+/env/*
+/COLLECTED-DATA/videos/*
+/COLLECTED-DATA/Data_Summary_export_12-14-23-15.43.08.csv
+test.ipynb
+/app/__pycache__/*
